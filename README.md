@@ -62,7 +62,7 @@ Make sure you have the following dependencies installed before running the progr
 
 pip install pyperclip
 
-##How It Works
+### How It Works
 
 - Add a new password
 

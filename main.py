@@ -9,7 +9,7 @@ import json
 def search_password():
     website=web_input.get()
     try:
-        with open("password-generator/data.json", "r") as data_file:
+        with open("./data.json", "r") as data_file:
             data = json.load(data_file)
     except FileNotFoundError:
         messagebox.showinfo(title="Error", message="File not found")
@@ -60,14 +60,14 @@ def save():
 
         if is_ok:
             try:
-                with open("password-generator/data.json", "r") as data_file:
+                with open("./data.json", "r") as data_file:
                     data = json.load(data_file)
             except FileNotFoundError:
-                with open("password-generator/data.json", "w") as data_file:
+                with open("./data.json", "w") as data_file:
                     json.dump(json_data, data_file, indent=4)
             else:
                 data.update(json_data)
-                with open("password-generator/data.json", "w") as data_file:
+                with open("./data.json", "w") as data_file:
                     json.dump(data, data_file, indent=4)
             finally:
                 clear_all()
@@ -79,7 +79,7 @@ window.config(padx=45, pady=45)
 
 
 canvas= Canvas(width=200, height=200)
-logo=PhotoImage(file="password-generator/logo.png")
+logo=PhotoImage(file="logo.png")
 canvas.create_image(100, 100, image=logo)
 canvas.grid(row=0, column=1)
 
