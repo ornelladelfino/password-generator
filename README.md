@@ -1,11 +1,11 @@
 # password-generator
-![Password manager](password-generator/pass_manager.png)
+![Password manager](pass_manager.png)
 
-#Password Manager
+## Gestor de contraseñas
 
 Este es un gestor de contraseñas creado con Python y la biblioteca Tkinter para la interfaz gráfica. Permite generar, almacenar y recuperar contraseñas de manera segura utilizando un archivo JSON.
 
-##Características
+### Características
 
 - Generador de contraseñas seguras: Crea contraseñas aleatorias con letras, números y símbolos.
 
@@ -15,14 +15,14 @@ Este es un gestor de contraseñas creado con Python y la biblioteca Tkinter para
 
 - Interfaz gráfica intuitiva: Construida con Tkinter para una fácil interacción.
 
-##Requisitos
+### Requisitos
 
 Asegúrate de tener instaladas las siguientes dependencias antes de ejecutar el programa:
 
 pip install pyperclip
 
 
-##Funcionamiento
+### Funcionamiento
 
 Añadir una nueva contraseña
 
@@ -42,11 +42,11 @@ Añadir una nueva contraseña
 
 - Si existe, se mostrará un cuadro de diálogo con la información guardada.
 
-#Password Manager
+## Password Manager
 
 This is a password manager created with Python and the Tkinter library for the graphical interface. It allows you to generate, store, and retrieve passwords securely using a JSON file.
 
-##Features
+### Features
 
 - Secure password generator: Creates random passwords with letters, numbers, and symbols.
 
@@ -56,7 +56,7 @@ This is a password manager created with Python and the Tkinter library for the g
 
 - Intuitive graphical interface: Built with Tkinter for easy interaction.
 
-##Requirements
+### Requirements
 
 Make sure you have the following dependencies installed before running the program:
 
