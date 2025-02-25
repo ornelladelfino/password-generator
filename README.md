@@ -1,4 +1,4 @@
-# password-generator
+# password-manager
 ![Password manager](pass_manager.png)
 
 ## Gestor de contraseñas
