@@ -9,7 +9,7 @@ import json
 def search_password():
     website=web_input.get()
     try:
-        with open("data.json", "r") as data_file:
+        with open("password-generator/data.json", "r") as data_file:
             data = json.load(data_file)
     except FileNotFoundError:
         messagebox.showinfo(title="Error", message="File not found")
@@ -60,14 +60,14 @@ def save():
 
         if is_ok:
             try:
-                with open("data.json", "r") as data_file:
+                with open("password-generator/data.json", "r") as data_file:
                     data = json.load(data_file)
             except FileNotFoundError:
-                with open("data.json", "w") as data_file:
+                with open("password-generator/data.json", "w") as data_file:
                     json.dump(json_data, data_file, indent=4)
             else:
                 data.update(json_data)
-                with open("data.json", "w") as data_file:
+                with open("password-generator/data.json", "w") as data_file:
                     json.dump(data, data_file, indent=4)
             finally:
                 clear_all()
@@ -98,7 +98,7 @@ email_label.grid(row=2, column=0)
 
 email_input= Entry(width=40)
 email_input.grid(row=2, column=1, columnspan=2)
-email_input.insert(0, "@hotmail.com")
+email_input.insert(0, "@gmail.com")
 
 password_label= Label(text="Password:")
 password_label.grid(row=3, column=0)
